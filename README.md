@@ -1,2 +1,2 @@
 # Mystery-dungeon
-![](https://thumbs.gfycat.com/WellwornMemorableGentoopenguin-size_restricted.gif)
+![](https://thumbs.gfycat.com/QueasyImpartialBaboon-size_restricted.gif)
