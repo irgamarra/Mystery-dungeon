@@ -53,20 +53,22 @@
     <UnityVersion>2020.2.4f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\UI\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
-    <Compile Include="Assets\Player\Scripts\Movement.cs" />
-    <Compile Include="Assets\UI\Joystick Pack\Scripts\Base\Joystick.cs" />
-    <Compile Include="Assets\Player\Scripts\Sword.cs" />
-    <Compile Include="Assets\UI\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
-    <Compile Include="Assets\UI\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
-    <Compile Include="Assets\UI\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
-    <Compile Include="Assets\Enemy\Scripts\EnemyAttacks.cs" />
-    <Compile Include="Assets\HealthBar\HealthBar.cs" />
-    <Compile Include="Assets\UI\Joystick Pack\Examples\JoystickPlayerExample.cs" />
-    <Compile Include="Assets\UI\Attack Buttons\ButtonFunctions.cs" />
-    <Compile Include="Assets\HealthBar\Properties.cs" />
-    <Compile Include="Assets\UI\Joystick Pack\Examples\JoystickSetterExample.cs" />
-    <Compile Include="Assets\General Scripts\SpriteLooksAtCamera.cs" />
+    <Compile Include="Assets\Prefabs\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+    <Compile Include="Assets\Scripts\Player\Movement.cs" />
+    <Compile Include="Assets\Prefabs\Joystick Pack\Scripts\Base\Joystick.cs" />
+    <Compile Include="Assets\Scripts\Player\Sword.cs" />
+    <Compile Include="Assets\Prefabs\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\Prefabs\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+    <Compile Include="Assets\Prefabs\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyAttacks.cs" />
+    <Compile Include="Assets\Prefabs\HealthBar\HealthBar.cs" />
+    <Compile Include="Assets\Prefabs\Joystick Pack\Examples\JoystickPlayerExample.cs" />
+    <Compile Include="Assets\Scripts\UI\Attack Buttons\ButtonFunctions.cs" />
+    <Compile Include="Assets\Prefabs\HealthBar\Properties.cs" />
+    <Compile Include="Assets\Prefabs\Joystick Pack\Examples\JoystickSetterExample.cs" />
+    <Compile Include="Assets\Scripts\General Scripts\SpriteLooksAtCamera.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerHP.cs" />
+    <Compile Include="Assets\Scripts\UI\WinLoseCondition.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -645,6 +647,9 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -653,9 +658,6 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

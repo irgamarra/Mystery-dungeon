@@ -5,10 +5,12 @@ ScriptsOnlyBuild:
     - EnemyAttacks
     - HealthBar
     - Movement
+    - PlayerHP
     - Properties
     - SpriteLooksAtCamera
     - Sword
     - VariableJoystick
+    - WinLoseCondition
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -76,36 +78,42 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1596}
     - Class: 114
-      Script: {instanceID: 1910}
+      Script: {instanceID: 1916}
     - Class: 114
-      Script: {instanceID: 2200}
+      Script: {instanceID: 2212}
     - Class: 114
-      Script: {instanceID: 2220}
+      Script: {instanceID: 2232}
     - Class: 114
-      Script: {instanceID: 2244}
+      Script: {instanceID: 2258}
     - Class: 114
-      Script: {instanceID: 2438}
+      Script: {instanceID: 2456}
     - Class: 114
-      Script: {instanceID: 2638}
+      Script: {instanceID: 2662}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 2844}
     - Class: 114
-      Script: {instanceID: 3042}
+      Script: {instanceID: 3086}
     - Class: 114
-      Script: {instanceID: 3080}
+      Script: {instanceID: 3126}
     - Class: 114
-      Script: {instanceID: 3104}
+      Script: {instanceID: 3154}
     - Class: 114
-      Script: {instanceID: 3220}
+      Script: {instanceID: 3274}
     - Class: 114
-      Script: {instanceID: 3366}
+      Script: {instanceID: 3422}
     - Class: 114
-      Script: {instanceID: 3502}
+      Script: {instanceID: 3564}
+    - Class: 114
+      Script: {instanceID: 15584}
+    - Class: 114
+      Script: {instanceID: 21730}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -526,7 +534,7 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
-      Hash: dbb0a7b7461c44101df31c40555e8a8d
+      Hash: 46b77cf5b6767046905ff6a2e039f6e3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Properties
@@ -632,6 +640,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 740c1514434b285f8f9ff8a656d443cd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerHP
+  - hash:
+      serializedVersion: 2
+      Hash: 505c265ba94dd5aa26bd2c47147d8e90
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WinLoseCondition
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
