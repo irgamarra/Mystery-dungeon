@@ -62,13 +62,14 @@
     <Compile Include="Assets\Prefabs\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyAttacks.cs" />
     <Compile Include="Assets\Prefabs\HealthBar\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerHP.cs" />
     <Compile Include="Assets\Prefabs\Joystick Pack\Examples\JoystickPlayerExample.cs" />
+    <Compile Include="Assets\Scripts\UI\WinLoseCondition.cs" />
     <Compile Include="Assets\Scripts\UI\Attack Buttons\ButtonFunctions.cs" />
     <Compile Include="Assets\Prefabs\HealthBar\Properties.cs" />
     <Compile Include="Assets\Prefabs\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Scripts\General Scripts\SpriteLooksAtCamera.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerHP.cs" />
-    <Compile Include="Assets\Scripts\UI\WinLoseCondition.cs" />
+    <Compile Include="Assets\Scripts\UI\HeartContainers.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

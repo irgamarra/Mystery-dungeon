@@ -6,15 +6,14 @@ public class EnemyAttacks : MonoBehaviour
 {
     public Transform attackIndicator;
     public int timeOfIndicator = 10;
-    public Transform player = null;
+    private GameObject [] characters = null;
     Animator paw1 = null;
     Animator body = null;
 
     // Start is called before the first frame update
     void Start()
     {
-        if(player == null)
-            player = GameObject.Find("Player").transform;
+        characters = GameObject.FindGameObjectsWithTag("Characters");
         if (paw1 == null)
             paw1 = GameObject.Find("Enemy/Paws/Paw1").GetComponent<Animator>();
         if (body == null)
@@ -34,10 +33,18 @@ public class EnemyAttacks : MonoBehaviour
         //Random.Range(0, numberOfAttacks);
 
         //If player is too close, bite him
-        if (player.position.x < 1 &&
-            player.position.x > -1 &&
-            player.position.z > -2 &&
-            player.position.z < -1)
+        bool tooClose = false;
+        foreach(GameObject character in characters)
+        {
+            if (character.transform.position.x < 1 &&
+            character.transform.position.x > -1 &&
+            character.transform.position.z > -2 &&
+            character.transform.position.z < -1)
+            {
+                tooClose = true;
+            }
+        }
+        if (tooClose)
         {
             StartCoroutine(Bite());
         }

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Canvas
   - Enemy Attack
+  - Indicator
+  - Characters
   layers:
   - Default
   - TransparentFX

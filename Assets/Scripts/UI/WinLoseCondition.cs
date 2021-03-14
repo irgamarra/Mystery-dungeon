@@ -7,7 +7,7 @@ public class WinLoseCondition : MonoBehaviour
     GameObject loseScreen;
     GameObject winScreen;
 
-    public GameObject player;
+    public GameObject[] characters;
     public GameObject enemy;
 
     private void Start()
@@ -17,16 +17,24 @@ public class WinLoseCondition : MonoBehaviour
 
         loseScreen.SetActive(false);
         winScreen.SetActive(false);
-
-        player = GameObject.Find("Player");
-        enemy = GameObject.Find("Enemy/Body");
+        
+        if(enemy == null)
+            enemy = GameObject.Find("Enemy/Body");
 
     }
 
     public void Update()
     {
         //Lose conditions:
-        if (player.GetComponent<PlayerHP>().currentHealth == 0)
+
+        //all characters' hp = 0
+        int charactersDown = 0;
+        foreach(GameObject characters in characters)
+        {
+            if (characters.GetComponent<PlayerHP>().currentHealth == 0)
+                charactersDown++;
+        }
+        if (charactersDown == characters.Length)
         {
             Lose();
         }
