@@ -6,14 +6,17 @@ using UnityEngine.UI;
 public class ButtonFunctions : MonoBehaviour
 {
     private GameObject indicator;
+
     private void Start()
     {
         indicator = GameObject.FindGameObjectWithTag("Indicator");
     }
+
     public void SwordAttack()
     {
         indicator.transform.parent.Find("Weapon").GetComponent<Animator>().SetTrigger("Attack");
     }
+
     public void ChangeCharacter()
     {
         GameObject currentCharacter = indicator.transform.parent.gameObject;
