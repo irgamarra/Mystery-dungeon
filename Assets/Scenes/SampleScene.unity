@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 196905697}
   - component: {fileID: 196905696}
   m_Layer: 5
-  m_Name: ChangeCharacter
+  m_Name: SwitchCharacters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -923,7 +923,7 @@ Animator:
   m_GameObject: {fileID: 624640005}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1bcc4fd8326bbe5409e05d0a740fd063, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9a2ab949159d27e46a650d41e81c3053, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -945,7 +945,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 624640007}
-  RightKey: 32
+  key: 0
+  weaponType: Staff
+  bulletStaff: {fileID: 3175275197422592761, guid: 6e46c180ccf1ae14e9201c8a900be590, type: 3}
+  bulletSpeed: 100
+  bulletDistance: 10
 --- !u!54 &624640009
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2246,7 +2250,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1250616540}
         m_TargetAssemblyTypeName: ButtonFunctions, Assembly-CSharp
-        m_MethodName: SwordAttack
+        m_MethodName: Attack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2520,7 +2524,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1712171927}
-  RightKey: 32
+  key: 0
+  weaponType: Sword
+  bulletStaff: {fileID: 0}
+  bulletSpeed: 0
+  bulletDistance: 0
 --- !u!95 &1712171927
 Animator:
   serializedVersion: 3
@@ -2858,7 +2866,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Change
+  m_Text: Switch
 --- !u!222 &1989500827
 CanvasRenderer:
   m_ObjectHideFlags: 0

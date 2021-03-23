@@ -12,9 +12,9 @@ public class ButtonFunctions : MonoBehaviour
         indicator = GameObject.FindGameObjectWithTag("Indicator");
     }
 
-    public void SwordAttack()
+    public void Attack()
     {
-        indicator.transform.parent.Find("Weapon").GetComponent<Animator>().SetTrigger("Attack");
+        indicator.transform.parent.Find("Weapon").GetComponent<Attack>().ToAttack() ;
     }
 
     public void ChangeCharacter()

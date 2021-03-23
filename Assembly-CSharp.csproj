@@ -56,7 +56,7 @@
     <Compile Include="Assets\Prefabs\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
     <Compile Include="Assets\Scripts\Player\Movement.cs" />
     <Compile Include="Assets\Prefabs\Joystick Pack\Scripts\Base\Joystick.cs" />
-    <Compile Include="Assets\Scripts\Player\Sword.cs" />
+    <Compile Include="Assets\Scripts\Player\Attack.cs" />
     <Compile Include="Assets\Prefabs\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Prefabs\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Prefabs\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
